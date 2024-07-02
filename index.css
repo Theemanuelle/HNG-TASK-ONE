@@ -15,15 +15,10 @@ header {
     margin-top: 20px;
 }
 
-/* header img {
-    border-radius: 5%;
-    margin-top: 10px;
-    max-width: 300px;
-} */
 header img {
-    /* border-radius: 50%; */
-    width: 720px; /* natural width */
-    height: 1280px; /* natural height */
+ 
+            width: 150px; /* natural width */
+            height: 150px; /* natural height */
 }
 
 .goals {
