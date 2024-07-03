@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f5f5f5;
+    background-color:  rgb(231, 228, 228);
     color: #333;
 }
 
@@ -15,21 +15,22 @@ header {
     margin-top: 20px;
 }
 
-header img {
  
-            width: 150px; /* natural width */
-            height: 150px; /* natural height */
-}
-
 .goals {
     margin: 20px 0;
     padding: 20px;
-    background-color: #fff;
+    background-color: gainsboro;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
+    border-radius: 20px;
 }
 
+.goals:hover{
+    background-color: rgb(190, 187, 187);  
+  transform: scale(1.1);  
+  transform: translateY(-10px);
+ }
 .goals ul {
     list-style-type: none;
     padding: 0;
@@ -60,13 +61,36 @@ footer nav ul li {
     margin: 0;
 }
 
-footer nav ul li a {
+ 
+
+.links a {
+    display: block;
+    margin: 10px 0;
+    color: black;
     text-decoration: none;
-    color: #0073e6;
+     
+}
+.links a:hover {
+  text-decoration: solid;
+   
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+
+    }
+    header {
+        padding: 10px;
+        
+    }
     .goals {
-        width: 90%;
+        padding: 10px;
+    }
+    footer {
+        padding: 10px;
+    }
+    nav ul li {
+        margin: 5px;
     }
 }
